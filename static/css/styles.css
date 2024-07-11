@@ -1,0 +1,41 @@
+/* styles.css */
+
+/* Stil für das Filament-Manager-Widget */
+#filament_manager {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#filament_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filament_item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.color_circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.filament_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.filament_color {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.filament_bar {
+    height: 10px;
+    background-color: #ccc;
+}

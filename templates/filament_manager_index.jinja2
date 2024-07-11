@@ -1,0 +1,24 @@
+<div id="filament_manager">
+    <h2>Filament Übersicht</h2>
+    <div id="filament_list">
+        {% for filament in filaments %}
+        <div class="filament_item">
+            <div class="color_circle" style="background-color: {{ filament.color }}"></div>
+            <div class="filament_info">
+                <span class="filament_color">{{ filament.color }}</span>
+                <div class="filament_bar" style="width: {{ filament.weight }}%;"></div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <button id="add_filament">+</button>
+</div>
+
+<div id="print_history">
+    <h2>Druckverlauf</h2>
+    <ul>
+        {% for print in prints %}
+        <li>{{ print.name }} - {{ print.weight }}g - {{ print.date }}</li>
+        {% endfor %}
+    </ul>
+</div>
