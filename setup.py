@@ -1,20 +1,9 @@
-# setup.py
-
-import setuptools
-
-setuptools.setup(
-    name="OctoPrint-FilamentManager",
-    version="0.1.1",
-    author="toooomm",
-    author_email="peterotzi79@gmail.com",
-    description="Manage filaments used in your prints with OctoPrint",
-    entry_points={
-        "octoprint.plugin": [
-            "filamentmanager = octoprint_filamentmanager"
-        ]
-    },
-    install_requires=[
-        "octoprint"
-    ],
-    packages=setuptools.find_packages()
-)
+plugin_identifier = "octo_filament_manager"
+plugin_package = "octo_filament_manager"
+plugin_name = "Octo Filament Manager"
+plugin_version = "1.2.0"
+plugin_description = "Plugin für die Verwaltung von 3D-Druck-Filamenten in OctoPrint"
+plugin_author = "Dein Name"
+plugin_author_email = "deine@email.com"
+plugin_url = "https://github.com/deinGitHubName/octo_filament_manager"
+plugin_license = "AGPLv3"
