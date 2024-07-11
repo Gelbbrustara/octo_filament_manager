@@ -4,5 +4,5 @@ This is only a Test. Do not use any of this files or your Octoprint might be get
 
 Created by: https://github.com/Gelbbrustara
 
-Version: Beta V1.0
+Version: Beta V1.1
 

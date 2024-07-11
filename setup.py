@@ -1,19 +1,20 @@
-from setuptools import setup
+# setup.py
 
-setup(
-    name="octoprint_filament_manager",
-    version="0.1.0",
-    description="OctoPrint Plugin for print management and filament monitoring",
-    author="Gelbbrustara",
-    packages=["octoprint_filament_manager"],
-    include_package_data=True,
-    install_requires=[
-        "OctoPrint>=1.4.0",
-        "SQLAlchemy"
-    ],
+import setuptools
+
+setuptools.setup(
+    name="OctoPrint-FilamentManager",
+    version="0.1.1",
+    author="toooomm",
+    author_email="peterotzi79@gmail.com",
+    description="Manage filaments used in your prints with OctoPrint",
     entry_points={
         "octoprint.plugin": [
-            "filament_manager = octoprint_filament_manager"
+            "filamentmanager = octoprint_filamentmanager"
         ]
-    }
+    },
+    install_requires=[
+        "octoprint"
+    ],
+    packages=setuptools.find_packages()
 )

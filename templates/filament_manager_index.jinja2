@@ -1,24 +1,15 @@
-<div id="filament_manager">
-    <h2>Filament Übersicht</h2>
+{# filament_manager_settings.jinja2 #}
+
+<form id="filament_manager_settings">
+    <h3>Filament Manager Settings</h3>
     <div id="filament_list">
-        {% for filament in filaments %}
-        <div class="filament_item">
-            <div class="color_circle" style="background-color: {{ filament.color }}"></div>
-            <div class="filament_info">
-                <span class="filament_color">{{ filament.color }}</span>
-                <div class="filament_bar" style="width: {{ filament.weight }}%;"></div>
+        {% for filament in settings.filaments %}
+            <div class="filament">
+                <span class="color-circle" style="background-color: {{ filament.color }}"></span>
+                <span class="name">{{ filament.name }}</span>
+                <div class="usage-bar" style="width: {{ filament.usage }}%;"></div>
+                <button class="delete-btn" data-name="{{ filament.name }}">Delete</button>
             </div>
-        </div>
         {% endfor %}
     </div>
-    <button id="add_filament">+</button>
-</div>
-
-<div id="print_history">
-    <h2>Druckverlauf</h2>
-    <ul>
-        {% for print in prints %}
-        <li>{{ print.name }} - {{ print.weight }}g - {{ print.date }}</li>
-        {% endfor %}
-    </ul>
-</div>
+</form>
